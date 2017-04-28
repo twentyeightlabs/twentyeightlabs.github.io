@@ -37,7 +37,7 @@ label{
 and (min-device-width : 200px) 
 and (max-device-width : 900px) {
 /* Styles */
-  .tf-home {
+  #tf-home {
     background-attachment: scroll;
 }
 }
