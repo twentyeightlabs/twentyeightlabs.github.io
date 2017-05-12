@@ -20,7 +20,7 @@ $(document).ready(function () {
             for (var i = 0; i <= allLinesArray.length - 1; i++) {
 	        var rowData = allLinesArray[i].split(',');
 	        if(rowData && rowData.length > 1)
-	            dataPoints.push({ x: parseFloat(rowData[2]), label: rowData[2] });
+	            dataPoints.push({ y: parseFloat(rowData[3]), label: rowData[2] });
             }
             chart.options.data[0].dataPoints = dataPoints;
             chart.render();
@@ -43,7 +43,7 @@ $(document).ready(function () {
             
 });
 </script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+<script type="text/javascript" src="../canvasjs.min.js"></script>
 </head>
 <body>
 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
